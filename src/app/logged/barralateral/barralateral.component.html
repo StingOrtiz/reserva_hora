@@ -6,13 +6,13 @@
       <!-------Menu cliente-->
       <a class="list-group-item list-group-item-action bg-light" (click)="clientecambia()">Clientes</a>
       <ul *ngIf="cliente">
-        <li class="no"><a routerLink="/logged/cliente" (click)="ocultar()" class="list-group-item list-group-item-action bg-light">Clientes</a></li>
+        <li class="no"><a routerLink="/logged/cliente" (click)="ocultar(on)" class="list-group-item list-group-item-action bg-light">Clientes</a></li>
       </ul>
       <!-------Menu Hora-->
       <a class="list-group-item list-group-item-action bg-light" (click)="Horacambia()">Hora</a>
       <ul *ngIf="hora">
-          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar()" routerLink="/logged/agendadas">Agendadas</a></li>
-          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar()" routerLink="/logged/agendar">Agendar</a></li>
+          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar(on)" routerLink="/logged/agendadas">Agendadas</a></li>
+          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar(on)" routerLink="/logged/agendar">Agendar</a></li>
       </ul>
       <!-------Menu Derivaciones-->
     </div>
@@ -20,8 +20,8 @@
       <!-------Menu Hora-->
       <a class="list-group-item list-group-item-action bg-light" (click)="Horacambia()">Hora</a>
       <ul *ngIf="hora">
-          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar()" routerLink="/logged/agendadas">Agendadas</a></li>
-          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar()" routerLink="/logged/agendar">Agendar</a></li>
+          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar(on)" routerLink="/logged/agendadas">Agendadas</a></li>
+          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar(on)" routerLink="/logged/agendar">Agendar</a></li>
       </ul>
     </div>
     <!-------Inicia admin-->
@@ -29,13 +29,13 @@
       <!-------Menu cliente-->
       <a class="list-group-item list-group-item-action bg-light" (click)="clientecambia()">Clientes</a>
       <ul *ngIf="cliente">
-        <li class="no"><a routerLink="/logged/cliente" (click)="ocultar()" class="list-group-item list-group-item-action bg-light">Clientes</a></li>
+        <li class="no"><a routerLink="/logged/cliente" (click)="ocultar(on)" class="list-group-item list-group-item-action bg-light">Clientes</a></li>
       </ul>
       <!-------Menu Hora-->
       <a class="list-group-item list-group-item-action bg-light" (click)="Horacambia()">Hora</a>
       <ul *ngIf="hora">
-          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar()" routerLink="/logged/agendadas">Agendadas</a></li>
-          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar()" routerLink="/logged/agendar">Agendar</a></li>
+          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar(on)" routerLink="/logged/agendadas">Agendadas</a></li>
+          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar(on)" routerLink="/logged/agendar">Agendar</a></li>
       </ul>
     </div>
   </div>
