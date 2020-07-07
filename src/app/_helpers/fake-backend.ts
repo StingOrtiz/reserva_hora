@@ -7,7 +7,7 @@ import {ApiService} from '../_services/api.service'
 
 // array in local storage for registered users
 let api:ApiService;
-let users = JSON.parse(api.getAllUsuario()) || [];
+let users = JSON.parse(localStorage.getItem('users')) || [];
 
 @Injectable()
 

@@ -8,7 +8,7 @@ import { Router } from "@angular/router";
 })
 export class clienteComponent implements OnInit {
 
-  private route: string;
+  public route: string;
   
   constructor(location: Location, router: Router) { 
     router.events.subscribe(val => {

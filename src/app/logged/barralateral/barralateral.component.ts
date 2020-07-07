@@ -17,7 +17,6 @@ export class BarralateralComponent implements OnInit {
   public hora: boolean = false;
   public reuniones: boolean = false;
   public clienten: boolean = false;
-  public derivaciones: boolean = false;
   public mensaje: string;
   constructor( ) {}
   
@@ -51,14 +50,6 @@ export class BarralateralComponent implements OnInit {
     }
     else {
       this.reuniones = true
-    }
-  }
-  derivacionescambia() {
-    if (this.derivaciones == true) {
-      this.derivaciones = false
-    }
-    else {
-      this.derivaciones = true
     }
   }
   //#endregion

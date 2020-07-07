@@ -15,11 +15,6 @@
           <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar()" routerLink="/logged/agendar">Agendar</a></li>
       </ul>
       <!-------Menu Derivaciones-->
-      <a class="list-group-item list-group-item-action bg-light" (click)="derivacionescambia()" >Derivaciones</a>
-      <ul *ngIf="derivaciones">
-          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar()" routerLink="/logged/derivaciones">Realizadas</a></li>
-          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar()" routerLink="/logged/derivar">Derivar</a></li>
-      </ul>
     </div>
     <div *ngIf="ucliente">
       <!-------Menu Hora-->
@@ -41,12 +36,6 @@
       <ul *ngIf="hora">
           <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar()" routerLink="/logged/agendadas">Agendadas</a></li>
           <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar()" routerLink="/logged/agendar">Agendar</a></li>
-      </ul>
-      <!-------Menu Derivaciones-->
-      <a class="list-group-item list-group-item-action bg-light" (click)="derivacionescambia()" >Derivaciones</a>
-      <ul *ngIf="derivaciones">
-          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar()" routerLink="/logged/derivaciones">Realizadas</a></li>
-          <li class="no"><a class="list-group-item list-group-item-action bg-light" (click)="ocultar()" routerLink="/logged/derivar">Derivar</a></li>
       </ul>
     </div>
   </div>

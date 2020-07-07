@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import { Location } from "@angular/common";
 import { ApiService } from 'src/app/_services/api.service';
-import { userInfo } from 'os';
 export interface PeriodicElement {
   name: string;
   position: number;
