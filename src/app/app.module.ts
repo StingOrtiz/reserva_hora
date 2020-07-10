@@ -13,12 +13,14 @@ import { RegisterComponent } from './register';
 import { AlertComponent } from './_components';
 
 
+
 @NgModule({
   declarations: [
     AppComponent, routecomponent,
     LoginComponent,
     RegisterComponent,
-    AlertComponent
+    AlertComponent,
+
   ],
   imports: [
     BrowserModule,
