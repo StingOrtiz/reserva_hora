@@ -11,7 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
 import { AlertComponent } from './_components';
-
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,8 +21,11 @@ import { AlertComponent } from './_components';
     RegisterComponent,
     AlertComponent,
 
+
+
   ],
   imports: [
+    
     BrowserModule,
     BrowserAnimationsModule,
     MatTableModule,
@@ -31,7 +34,8 @@ import { AlertComponent } from './_components';
     LoggedModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     providerroute,
