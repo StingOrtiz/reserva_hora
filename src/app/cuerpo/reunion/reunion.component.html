@@ -1,46 +1,36 @@
-<div class="container container-p">
-    <div class="row hc">
-        <div class="col-12  pb">
-            <div class="caja blanca nombre">
-                <h1 class="txtnombre">
-                    Agendar
-                    <i class="but" *ngIf="button"></i>
-                </h1>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 nopr">
-                    <div class="conteiner caja blanca">
-                        <div class="row hc">
-                            <div class="col-12">
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <h2>Cliente</h2>
-                                        </li>
-                                        <li>
-                                            <select class="browser-default custom-select" name="Seleccionar una opcion"
-                                                readonly [attr.disabled]="desbool">
-                                                <option value="null">{{select}}</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            Fecha:
-                                            <input type="date" id="start" name="trip-start"
-                                                min="2018-01-01 " max="2018-12-31" [attr.value]="dia"  [attr.readonly]="diaread">
-                                        </li>
-                                        <li>
-                                            Hora:
-                                            <input type="time" value="12:12" min="00:00" max="24:00" [attr.value]="hora"  [attr.readonly]="horaread">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<div class="d-flex flex-wrap flex-md-nowrap pt-3 pb-2 mb-3 border-bottom" >
+    <h4>Nueva Hora</h4>
+</div>
+    
+<div class="card">
+    <div class="card-header">
+        Reservar Hora
+    </div>
+    <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label >Nombre Cliente</label>
+                    <input type="text" class="form-control" name="cliente" (ngModel)="cliente">
                 </div>
-            </div>
-        </div>
+                <div class="form-group">
+                    <label >Ingrese el lugar</label>
+                    <input type="text" class="form-control" name="lugar" (ngModel)="lugar">        
+                </div>
+                <div class="form-group">
+                    <label>Numero de persona</label>
+                    <input type="text" class="form-control" name="numpersonas" (ngModel)="numpersonas" >
+                  
+                </div>
+                <div class="form-group">
+                    <label>Descripcion</label>
+                    <input type="text" class="form-control" name="descripcion" (ngModel)="descripcion" >
+                </div>
+                <div class="form-group">
+                    <label>Fecha de la reserva</label>
+                    <input type="text" class="form-control" name="fecha" (ngModel)="fecha" >
+                </div>
+   
+                <button type="submit" class="btn btn-primary btn-block" (click)="crearHora()">Reservar Hora</button>                
+            </form>
     </div>
 </div>

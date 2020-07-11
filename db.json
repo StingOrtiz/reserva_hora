@@ -2,13 +2,13 @@
   "horas": [
     {
       "id": "number",
-      "motivo_apertura_id": "string",
-      "clasificacion": "number",
-      "descripcion": "string",
-      "fecha_inicio": "Date",
-      "fecha_cierre": "Date",
-      "estado": "string",
-      "nivel_riesgo": "number"
+    "cliente": "string",
+    "lugar":"string",
+    "numpersonas": "number",
+    "descripcion": "string",
+    "fecha": "Date",
+    "estado": "string"
+    
     }
   ],
   "usuario": [
@@ -68,6 +68,5 @@
       "tipo": "ucliente",
       "id": 7
     }
-
   ]
 }

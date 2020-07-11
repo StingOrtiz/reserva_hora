@@ -1,7 +1,9 @@
+
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from '../_models/user';
+import {Horas} from 'src/app/_models/horas'
 
 @Injectable({
   providedIn: 'root'
@@ -16,6 +18,9 @@ export class ApiService {
     return this.http.get<User[]>(this.baseurl + 'usuario')
   
   }
+  crearHora(hora: Horas) {
+    return this.http.post('http://localhost:3000/horas', hora);
+}
   crearUsuario(user: User){
     return this.http.post('http://localhost:3000/usuarios', user);
   }
@@ -23,7 +28,7 @@ export class ApiService {
     return this.http.get<User>(this.baseurl + 'usuario/' + id)
   }
   getHoras(email: string): Observable<any> {
-    return this.http.get(this.baseurl + 'hora/' + email + '/')
+    return this.http.get(this.baseurl + 'horas/')
   }
   register(user: User) {
     return this.http.post(this.baseurl + `/users/register`, user);

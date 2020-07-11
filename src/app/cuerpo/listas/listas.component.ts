@@ -33,10 +33,7 @@ export class ListasComponent {
       }
       else if (this.location.path().split('/')[2] == "agendadas") {
         this.getHoras();
-      }
-      else if (this.location.path().split('/')[2] == "derivaciones") {
-        this.getDerivaciones();
-      }
+      } 
     }
   }
   rellenar(data) {
