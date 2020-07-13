@@ -2,13 +2,12 @@
   "horas": [
     {
       "id": "number",
-    "cliente": "string",
-    "lugar":"string",
-    "numpersonas": "number",
-    "descripcion": "string",
-    "fecha": "Date",
-    "estado": "string"
-    
+      "cliente": "string",
+      "lugar": "string",
+      "numpersonas": "number",
+      "descripcion": "string",
+      "fecha": "Date",
+      "estado": "string"
     }
   ],
   "usuario": [
@@ -67,6 +66,16 @@
       "phone": "pipo",
       "tipo": "ucliente",
       "id": 7
+    },
+    {
+      "firstName": "kaco",
+      "lastName": "kaco",
+      "username": "kaco",
+      "password": "123456",
+      "mail": "XkacoX@gmail.com",
+      "phone": "12345678",
+      "tipo": "ucliente",
+      "id": 8
     }
   ]
 }
