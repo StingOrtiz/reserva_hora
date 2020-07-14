@@ -31,33 +31,6 @@ export class UsuariosComponent implements OnInit {
   }
 
 
-  cargarProfesores(){
-    this.servicio.obtenerUsuariosPorTipo("PROFESOR").subscribe(
-      data =>{
-        this.usersP = data;
-        console.log("Respuesta del servidor");
-      }, 
-      error =>{ 
-        alert( "Ocurrio un error " );
-        console.log( "ERROR", error );
-       }
-    );
-    
-    console.log("Respuesta");
-  }
-
-
-  cargarAlumnos(){
-    this.servicio.obtenerUsuariosPorTipo("ALUMNO").subscribe(
-      data =>{
-        this.usersA = data;
-      }, 
-      error =>{ 
-        alert( "Ocurrio un error " );
-        console.log( "ERROR", error );
-       }
-    );
-  }
 
   editar(){}
 
