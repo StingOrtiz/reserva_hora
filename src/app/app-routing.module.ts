@@ -17,5 +17,5 @@ export class AppRoutingModule { }
 export const routecomponent=[
   LoginComponent,
   RegisterComponent,
-  AgendarComponent,
+  
 ]

@@ -12,7 +12,6 @@ import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
 import { AlertComponent } from './_components';
 import { FormsModule } from '@angular/forms';
-import { AgendarComponent } from './agendar'
 
 
 @NgModule({
@@ -21,10 +20,6 @@ import { AgendarComponent } from './agendar'
     LoginComponent,
     RegisterComponent,
     AlertComponent,
-    AgendarComponent
-
-
-
   ],
   imports: [
     
