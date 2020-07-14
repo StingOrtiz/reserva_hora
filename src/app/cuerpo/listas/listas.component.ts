@@ -71,16 +71,6 @@ export class ListasComponent {
       }
     )
   }
-  getDerivaciones() {
-    this.api.getDerivaciones('').subscribe(
-      data => {
-        this.rellenar(data)
-      },
-      error => {
-        console.log(error);
-      }
-    )
-  }
   navegar(algo: string): void {
     this.router.navigate(['/logged/' + this.location.path().split('/')[2] + '/' + algo]);
   }
