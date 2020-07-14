@@ -6,7 +6,7 @@
       "lugar": "string",
       "numpersonas": "number",
       "descripcion": "string",
-      "fecha": "Date",
+      "fecha": "Date"
     },
     {
       "cliente": "pepe",
@@ -25,7 +25,7 @@
       "password": "admin",
       "mail": "admin",
       "phone": "admin",
-      "tipo": "ucliente",
+      "tipo": "admin",
       "id": 1
     },
     {

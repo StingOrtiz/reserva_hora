@@ -30,10 +30,4 @@ export class UsuariosComponent implements OnInit {
     );
   }
 
-
-
-  editar(){}
-
-  eliminar(){}
-
 }

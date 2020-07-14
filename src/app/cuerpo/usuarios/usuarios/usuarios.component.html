@@ -21,7 +21,6 @@
                     <th scope="col">Nombre de Usuario</th>
                     <th scope="col">Email</th>
                     <th scope="col">Tipo</th>
-                    <th scope="col">Opciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -30,12 +29,6 @@
                     <td>{{user.username}}</td>
                     <td>{{user.email}}</td>
                     <td>{{user.tipo}}</td>
-                    <td>
-                        <div class="btn-group" role="group" aria-label="Basic example">
-                            <a class="btn btn-sm btn-outline-primary" routerLink="/privado/usuarios/editar/{{user.id}}">Editar</a>
-                            <button type="button" class="btn btn-sm btn-outline-danger">Eliminar</button>                            
-                        </div>
-                    </td>
                 </tr>
             </tbody>
         </table>

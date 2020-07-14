@@ -11,7 +11,7 @@ export class UserService {
     baseurl = "https://reservahora-json-kbefbqorma-ue.a.run.app/"
 
     getAll() {
-        return this.http.get<User[]>(`${config.apiUrl}/users`);
+        return this.http.get<User[]>(this.baseurl +'usuario');
     }
 
     register(user: User) {

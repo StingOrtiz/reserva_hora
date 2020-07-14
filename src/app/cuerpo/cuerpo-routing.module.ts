@@ -4,8 +4,6 @@ import {CuerpoComponent} from 'src/app/cuerpo/cuerpo.component';
 import {clienteComponent} from 'src/app/cuerpo/cliente/cliente.component';
 import {ListasComponent} from 'src/app/cuerpo/listas/listas.component';
 import { UsuariosComponent} from './usuarios/usuarios/usuarios.component';
-import { UsuariosCrearComponent} from './usuarios/usuarios-crear/usuarios-crear.component';
-import { UsuariosEditarComponent} from './usuarios/usuarios-editar/usuarios-editar.component';
 import { AgendarComponent} from '../agendar/agendar.component'
 
 const routes: Routes = [
@@ -18,8 +16,6 @@ const routes: Routes = [
       {path: 'derivaciones', component:clienteComponent},
       {path: 'calendario', component:clienteComponent},
       {path: 'usuario', component:UsuariosComponent},
-      {path: 'usuarioeditar', component:UsuariosEditarComponent},
-      {path: 'usuariocrear', component:UsuariosCrearComponent}
     ]
 },
 ];
