@@ -60,7 +60,7 @@ crearHora(){
   hora.descripcion=this.descripcion;
   hora.fecha=this.fecha;
   
-  this.apiService.crearHora( hora ).subscribe( 
+  this.apiService.crearHora(hora).subscribe( 
     data =>{
       alert( "Hora agregado!" );
       this.router.navigateByUrl( "/logged" );

@@ -5,7 +5,7 @@ RUN apt-get upgrade -y
 RUN apt-get install -y curl
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install -y nodejs 
-RUN npm install -g @angular/cli
+RUN npm install -g @angular/cli@8
 RUN apt-get remove -y curl
 RUN mkdir proyecto
 #COPY ./ proyecto

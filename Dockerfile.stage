@@ -6,7 +6,7 @@ RUN sudo apt-get update \
 && apt-get install -y curl  \
 && curl -sL deb.nodesource.com/setup_10.x | bash - \
 && apt-get install -y nodejs \
-&& npm install -g @angular/cli \
+&& npm install -g @angular/cli@8 \
 && mkdir app \
 && apt-get remove -y curl \
 && rm -rf /var/lib/apt/lists/*
@@ -20,4 +20,4 @@ RUN npm install && ng build --prod
 
 
 FROM nginx:1.15 AS final
-COPY --from=base ./dist/ReservaHora /usr/share/nginx/html/
+COPY --from=base /app/dist/ReservaHora /usr/share/nginx/html/
