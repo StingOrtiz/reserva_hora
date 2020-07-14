@@ -29,42 +29,6 @@
       "id": 1
     },
     {
-      "firstName": "hola",
-      "lastName": "hola",
-      "username": "hola",
-      "password": "holaho",
-      "mail": "holah",
-      "phone": "hola",
-      "id": 3
-    },
-    {
-      "firstName": "chao",
-      "lastName": "chao",
-      "username": "chao",
-      "password": "chaoch",
-      "mail": "chao",
-      "phone": "chao",
-      "id": 4
-    },
-    {
-      "firstName": "pepe",
-      "lastName": "pepe",
-      "username": "pepe",
-      "password": "pepepe",
-      "mail": "pepe",
-      "phone": "pepe",
-      "id": 5
-    },
-    {
-      "firstName": "pepe",
-      "lastName": "pepe",
-      "username": "pepep",
-      "password": "pepepe",
-      "mail": "pepepe",
-      "phone": "pepe",
-      "id": 6
-    },
-    {
       "firstName": "pipo",
       "lastName": "pipo",
       "username": "pipo",
