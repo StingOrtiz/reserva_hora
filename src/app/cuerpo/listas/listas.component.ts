@@ -55,7 +55,6 @@ export class ListasComponent {
     this.api.getAllUsuario().subscribe(
       data => {
         this.rellenar(data)
-        console.log(data)
       },
       error => {
         console.log(error);

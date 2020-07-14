@@ -12,16 +12,6 @@
   ],
   "usuario": [
     {
-      "id": 1,
-      "username": "string",
-      "password": "string",
-      "nombre": "string",
-      "apellido": "string",
-      "mail": "string",
-      "telefono": "string",
-      "Tipo": "Administrador"
-    },
-    {
       "firstName": "hola",
       "lastName": "hola",
       "username": "hola",
