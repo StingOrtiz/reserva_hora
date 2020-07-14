@@ -86,6 +86,16 @@
       "phone": "12345678",
       "tipo": "ucliente",
       "id": 9
+    },
+    {
+      "firstName": "agustin",
+      "lastName": "Ortiz",
+      "username": "StingOrtiz",
+      "password": "123456",
+      "mail": "agustin.ortiz@mayor.cl",
+      "phone": "12345678",
+      "tipo": "ucliente",
+      "id": 10
     }
   ]
 }
