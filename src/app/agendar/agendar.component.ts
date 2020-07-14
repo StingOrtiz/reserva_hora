@@ -63,7 +63,7 @@ export class AgendarComponent implements OnInit {
             .subscribe(
                 data => {
                     this.alertService.success('Hora Agendada', true);
-                    this.router.navigate(['/logged']);
+                    this.router.navigate(['/logged/agendadas']);
                 },
                 error => {
                     this.alertService.error(error);
