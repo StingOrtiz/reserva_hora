@@ -76,6 +76,16 @@
       "phone": "12345678",
       "tipo": "ucliente",
       "id": 8
+    },
+    {
+      "firstName": "pipe",
+      "lastName": "popo",
+      "username": "pupo",
+      "password": "123456",
+      "mail": "papa@gmail.com",
+      "phone": "12345678",
+      "tipo": "ucliente",
+      "id": 9
     }
   ]
 }
