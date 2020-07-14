@@ -7,3 +7,9 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install -y nodejs 
 RUN npm install -g json-server
 RUN apt-get remove -y curl
+
+COPY db.json /app
+
+WORKDIR /app
+
+ENTRYPOINT [ "json-server", "--host", "0.0.0.0", "--watch", "db.json" ]
