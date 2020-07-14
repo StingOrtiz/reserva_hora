@@ -26,6 +26,7 @@
       "password": "admin",
       "mail": "admin",
       "phone": "admin",
+      "tipo": "ucliente",
       "id": 1
     },
     {
