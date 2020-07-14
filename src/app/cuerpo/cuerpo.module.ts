@@ -5,6 +5,12 @@ import {MatTableModule} from '@angular/material';
 import { UsuariosComponent} from './usuarios/usuarios/usuarios.component';
 import { UsuariosCrearComponent} from './usuarios/usuarios-crear/usuarios-crear.component';
 import { UsuariosEditarComponent} from './usuarios/usuarios-editar/usuarios-editar.component';
+import { BrowserModule } from '@angular/platform-browser';
+import {LoggedModule} from 'src/app/logged/logged.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -23,6 +29,8 @@ import { UsuariosEditarComponent} from './usuarios/usuarios-editar/usuarios-edit
     CommonModule,
     CuerpoRoutingModule,
     MatTableModule,
+    ReactiveFormsModule,
+    FormsModule
 
   ]
 })

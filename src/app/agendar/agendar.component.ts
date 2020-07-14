@@ -1,6 +1,7 @@
+import { Horas } from 'src/app/_models/horas';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, } from '@angular/forms';
 import { first } from 'rxjs/operators';
 import {User} from 'src/app/_models/user';
 import { AlertService, UserService, AuthenticationService } from '../_services';
@@ -10,12 +11,13 @@ export class AgendarComponent implements OnInit {
     registerForm: FormGroup;
     loading = false;
     submitted = false;
-    firstName: string; 
-    lastName: string;
-    username: string;
-    password: string;
-    mail: string;
-    phone: string;
+    cliente: string; 
+    lugar:string;
+    numpersonas: string;
+    descripcion: string;
+    fecha: string;
+   
+    
     
 
     constructor(
@@ -26,19 +28,17 @@ export class AgendarComponent implements OnInit {
         private alertService: AlertService
     ) {
         // redirect to home if already logged in
-        if (this.authenticationService.currentUserValue) {
-            this.router.navigate(['/']);
-        }
+      
     }
 
     ngOnInit() {
         this.registerForm = this.formBuilder.group({
-            firstName: ['', Validators.required],
-            lastName: ['', Validators.required],
-            username: ['', Validators.required],
-            password: ['', [Validators.required, Validators.minLength(6)]],
-            mail: ['', Validators.required],
-            phone: ['', Validators.required]
+            cliente: ['', Validators.required],
+            lugar: ['', Validators.required],
+            numpersonas: ['', Validators.required],
+            descripcion: ['', [Validators.required, Validators.minLength(6)]],
+            fecha: ['', Validators.required]
+            
         });
     }
 
@@ -58,12 +58,12 @@ export class AgendarComponent implements OnInit {
         
 
         this.loading = true;
-        this.userService.crearUsuario(this.registerForm.value)
+        this.userService.crearHora(this.registerForm.value)
             .pipe(first())
             .subscribe(
                 data => {
-                    this.alertService.success('Registration successful', true);
-                    this.router.navigate(['']);
+                    this.alertService.success('Hora Agendada', true);
+                    this.router.navigate(['/logged']);
                 },
                 error => {
                     this.alertService.error(error);

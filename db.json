@@ -8,6 +8,14 @@
       "descripcion": "string",
       "fecha": "Date",
       "estado": "string"
+    },
+    {
+      "cliente": "pepe",
+      "lugar": "tip y tap",
+      "numpersonas": "4",
+      "descripcion": "cerca de la ventana",
+      "fecha": "20/07/2020 14:00",
+      "id": "V_jQU6j"
     }
   ],
   "usuario": [

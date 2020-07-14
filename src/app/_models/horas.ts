@@ -2,9 +2,9 @@ export class Horas {
     id: number;
     cliente: string;
     lugar:string;
-    numpersonas: number;
+    numpersonas: string;
     descripcion: string;
-    fecha: Date;
+    fecha: string;
     estado: string;
     
 }
