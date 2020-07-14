@@ -11,7 +11,7 @@ import {Horas} from 'src/app/_models/horas'
 export class ApiService {
   [x: string]: any;
 
-  baseurl = "http://localhost:3000/"
+  baseurl = "https://reservahora-json-kbefbqorma-ue.a.run.app/"
   constructor(private http: HttpClient) { }
 
   getAllUsuario(): Observable<any> {
@@ -19,10 +19,10 @@ export class ApiService {
   
   }
   crearHora(hora: Horas) {
-    return this.http.post('http://localhost:3000/horas', hora);
+    return this.http.post(this.baseurl + 'horas', hora);
 }
   crearUsuario(user: User){
-    return this.http.post('http://localhost:3000/usuarios', user);
+    return this.http.post(this.baseurl + 'usuarios', user);
   }
   getCliente(id:number){/*  */
     return this.http.get<User>(this.baseurl + 'usuario/' + id)

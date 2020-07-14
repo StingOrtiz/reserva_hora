@@ -8,6 +8,7 @@ import { User } from '../_models';
 @Injectable({ providedIn: 'root' })
 export class UserService {
     constructor(private http: HttpClient) { }
+    baseurl = "https://reservahora-json-kbefbqorma-ue.a.run.app/"
 
     getAll() {
         return this.http.get<User[]>(`${config.apiUrl}/users`);
@@ -22,34 +23,16 @@ export class UserService {
     }
     crearUsuario(user: User) {
         user.tipo = "ucliente"
-        return this.http.post('http://localhost:3000/usuario', user);
+        return this.http.post(this.baseurl +'usuario', user);
     }
     crearHora(hora: Horas) {
-        return this.http.post('http://localhost:3000/horas', hora);
+        return this.http.post(this.baseurl +'horas', hora);
     }
     obtenerUsuarioPorId(  id:number ){
-        return this.http.get<User>( "http://localhost:3000/usuarios/"+id );
+        return this.http.get<User>(this.baseurl + "usuario/"+id );
       }
     
-    
-       /**
-       * Function para obtener todos los usurios del servidor.
-       */
-      obtenerTodosLosProfesores(){
-        return this.http.get<User[]>( "http://localhost:3000/usuarios?tipo=PROFESOR" );
-      }
-      
-       /**
-       * Function para obtener todos los usurios del servidor.
-       */
-      obtenerUsuariosPorTipo( tipo:string ){
-        return this.http.get<User[]>( "http://localhost:3000/usuarios?tipo=" + tipo );
-      }
-    
-      /**
-       * Function para crear un usuario en el servidor
-       */
       editarUsuario( user:User ){
-        return this.http.put( "http://localhost:3000/usuarios/"+user.id, user );
+        return this.http.put( this.baseurl + "usuario/"+user.id, user );
       }
 }
