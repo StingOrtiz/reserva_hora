@@ -52,6 +52,14 @@ export class BarralateralComponent implements OnInit {
       this.reuniones = true
     }
   }
+  Usuariocambia() {
+    if (this.cliente == true) {
+      this.cliente = false
+    }
+    else {
+      this.cliente = true
+    }
+  }
   //#endregion
   //#region admin
   clientencambia() {

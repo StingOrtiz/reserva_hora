@@ -31,6 +31,12 @@
       <ul *ngIf="cliente">
         <li class="no"><a routerLink="/logged/cliente" (click)="ocultar(on)" class="list-group-item list-group-item-action bg-light">Clientes</a></li>
       </ul>
+      <a class="list-group-item list-group-item-action bg-light" (click)="Usuariocambia()">Usuarios</a>
+      <ul *ngIf="cliente">
+        <li class="no"><a routerLink="/logged/usuario" (click)="ocultar(on)" class="list-group-item list-group-item-action bg-light">Usuario</a></li>
+        <li class="no"><a routerLink="/logged/usuarioeditar" (click)="ocultar(on)" class="list-group-item list-group-item-action bg-light">Editar Usuario</a></li>
+        <li class="no"><a routerLink="/logged/usuariocrear" (click)="ocultar(on)" class="list-group-item list-group-item-action bg-light">Crear Usuario</a></li>
+      </ul>
       <!-------Menu Hora-->
       <a class="list-group-item list-group-item-action bg-light" (click)="Horacambia()">Hora</a>
       <ul *ngIf="hora">

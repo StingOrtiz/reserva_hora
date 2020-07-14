@@ -92,7 +92,7 @@
       "password": "123456",
       "mail": "agustin.ortiz@mayor.cl",
       "phone": "12345678",
-      "tipo": "ucliente",
+      "tipo": "admin",
       "id": 10
     }
   ]
