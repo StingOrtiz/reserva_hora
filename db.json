@@ -7,7 +7,6 @@
       "numpersonas": "number",
       "descripcion": "string",
       "fecha": "Date",
-      "estado": "string"
     },
     {
       "cliente": "pepe",
