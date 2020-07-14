@@ -20,6 +20,15 @@
   ],
   "usuario": [
     {
+      "firstName": "admin",
+      "lastName": "admin",
+      "username": "admin",
+      "password": "admin",
+      "mail": "admin",
+      "phone": "admin",
+      "id": 1
+    },
+    {
       "firstName": "hola",
       "lastName": "hola",
       "username": "hola",
